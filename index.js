@@ -36,6 +36,7 @@ function func(){
         let total = wpm+error
         accuracy.innerHTML = (total==0)?"Accuracy : __":"Accuracy : "+ Math.round(wpm/total*100)+"%"
         clearInterval(inter)
+        text.disabled = true;
     }
     else{
         if(0<=sec&&sec<=9){
