@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;500&family=Tilt+Prism&display=swap');
+*{
+   padding: 0%;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+    height:100vh ;
+    width:100vw; 
+    background-color: #DCD7C9;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+#nav{
+    width: 100%;
+    height: 15%;
+    background: #2C3639;
+    display: flex;
+    align-items: center;
+}
+#main{
+    width: 100%;
+    height: 85%;
+    display: flex;
+}
+#lev{
+    width: 20%;
+    height: 100%;
+    background-color:#3F4E4F;
+    opacity: 0.8;
+}
+#type{
+    height:100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    flex-direction: column;
+
+}
+#dis-ctn{
+    width: 80%;
+    height: 40%;
+    background-color: #2C3639;
+    border-radius: 15px;
+    padding: 20px;
+}
+#dis{
+    width: 100%;
+    height: 100%;
+    background-color: #2C3639;
+    opacity: 0.8;
+    border-radius: 15px;
+    font-weight: 100;
+    font-size: 30px;
+    color: #DCD7C9;
+    overflow: scroll;
+}
+#dis::-webkit-scrollbar {
+    display: none;
+  }
+  
+#wri{
+    width: 80%;
+    height: 16%;
+    background-color: #FFC18E;
+    border-radius: 15px;
+    opacity: 0.2;
+}
+#logo{
+    height: 30%;
+    margin: 20px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 18px;
+}
+#timer{
+    background-color: #A27B5C;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#time{
+    font-size: 40px;
+    font-family: 'Tilt Prism', cursive;
+    font-weight: 600;
+    color:#DCD7C9;
+}
+#marks{
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: 600;
+    color:#DCD7C9;
+}
+.highlight{
+    background-color: #513252;
+    border-radius: 2px;
+    padding: 2px;
+}
+#result{
+    height: 300px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#accuracy,#wrong,#correct{
+    font-size: 20px;
+}
+#refresh{
+    background-color: #3F4E4F;
+    border-radius: 50%;
+    padding: 12px
+}
+#refresh img{
+    width: 35px;
+}
+#footer{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
