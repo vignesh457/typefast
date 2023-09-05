@@ -21,16 +21,11 @@ body{
     width: 100%;
     height: 85%;
     display: flex;
-}
-#lev{
-    width: 20%;
-    height: 100%;
-    background-color:#3F4E4F;
-    opacity: 0.8;
+    justify-content: center;
 }
 #type{
     height:100%;
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -50,7 +45,6 @@ body{
     height: 100%;
     background-color: #2C3639;
     opacity: 0.8;
-    border-radius: 15px;
     font-weight: 100;
     font-size: 30px;
     color: #DCD7C9;
@@ -84,7 +78,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 20px;
 }
 #time{
     font-size: 40px;
@@ -93,10 +87,14 @@ input{
     color:#DCD7C9;
 }
 #marks{
-    font-size: 40px;
-    font-family: cursive;
+    font-size: 30px;
     font-weight: 600;
-    color:#DCD7C9;
+    color:#A27B5C;
+}
+#accuracy{
+    font-size: 30px;
+    font-weight: 600;
+    color:#A27B5C;
 }
 .highlight{
     background-color: #513252;
@@ -104,15 +102,23 @@ input{
     padding: 2px;
 }
 #result{
-    height: 300px;
     line-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: #2C3639;
+    width: auto;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 2px;
 }
-#accuracy,#wrong,#correct{
-    font-size: 20px;
+#control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 #refresh{
     background-color: #3F4E4F;
@@ -123,8 +129,15 @@ input{
     width: 35px;
 }
 #footer{
-    width: 200px;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 600px) {
+    #footer{
+        flex-direction: column;
+    }
 }

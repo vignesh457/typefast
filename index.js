@@ -17,17 +17,24 @@ var paraSum=""
 text.focus();
 let i=0; 
 
+function getPara(){
+    var refPara = dis.innerText;
+    ref = refPara.split(" ");
+    for(let i=0;i<ref.length;i++){
+        paraSum = paraSum+`<span id="${i}">${ref[i]}</span> `
+    }
+    dis.innerHTML=paraSum
+}
+getPara()
+
 function func(){
     if(sec==60){
         time.innerText="1:00"
     }
     else if(sec<0){
-        marks.innerText = wpm +" WPM"
-        correct.innerHTML = "Correct words : "+wpm
-        wrong.innerHTML = "Wrong words : "+error
+        marks.innerText = "WPM : "+wpm;
         let total = wpm+error
-        accuracy.innerHTML = (total==0)?"Accuracy : ---":"Accuracy : "+ Math.round(wpm/total*100)+"%"
-        result.style.backgroundColor="#A27B5C"
+        accuracy.innerHTML = (total==0)?"Accuracy : __":"Accuracy : "+ Math.round(wpm/total*100)+"%"
         clearInterval(inter)
     }
     else{
